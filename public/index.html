@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Résumé & Cover Letter Optimizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Instantly Improve Your Résumé</h1>
+    <p>Get a professionally optimized résumé and a tailored cover letter using AI.</p>
+  </header>
+  <main>
+    <form id="optimizer-form">
+      <label for="resume">Paste your current résumé:</label>
+      <textarea id="resume" rows="10" placeholder="Paste your résumé here" required></textarea>
+
+      <label for="jobdesc">Job description (optional):</label>
+      <textarea id="jobdesc" rows="6" placeholder="Paste job description here"></textarea>
+
+      <label for="tone">Tone:</label>
+      <select id="tone">
+        <option value="formal">Formal</option>
+        <option value="friendly">Friendly</option>
+      </select>
+
+      <label for="style">Style:</label>
+      <select id="style">
+        <option value="concise">Concise</option>
+        <option value="detailed">Detailed</option>
+      </select>
+
+      <button type="submit" id="generateBtn">Generate</button>
+    </form>
+
+    <section id="results" style="display:none;">
+      <h2>Improved Résumé</h2>
+      <pre id="resumeOutput"></pre>
+      <!-- Diff container to show what changed in the resume -->
+      <div id="resumeDiff" class="diff"></div>
+      <button id="copyResume">Copy Résumé</button>
+      <h2>Cover Letter</h2>
+      <pre id="coverLetterOutput"></pre>
+      <button id="copyCover">Copy Cover Letter</button>
+    </section>
+
+    <section id="paywall" style="display:none;">
+      <h2>Upgrade Required</h2>
+      <p>You have used your free optimization. Upgrade to continue.</p>
+      <!-- Replace the href below with your actual Stripe Payment Link -->
+      <a id="stripeLink" href="#" target="_blank">Upgrade Now</a>
+    </section>
+
+    <!-- Features section to highlight the benefits of the service -->
+    <section id="features">
+      <h2>Why Use Our AI Optimizer?</h2>
+      <ul>
+        <li>Save hours of rewriting with one click</li>
+        <li>Tailor your résumé to any job description</li>
+        <li>Receive a professional cover letter instantly</li>
+        <li>Enjoy one free optimization – try before you buy</li>
+      </ul>
+    </section>
+
+    <!-- How it works section to guide users through the process -->
+    <section id="how-it-works">
+      <h2>How It Works</h2>
+      <ol>
+        <li>Paste your résumé (and optional job description)</li>
+        <li>Select tone and style preferences</li>
+        <li>Our AI rewrites your résumé and drafts a cover letter</li>
+        <li>Copy or download your new documents</li>
+        <li>Upgrade for unlimited use</li>
+      </ol>
+    </section>
+
+    <!-- Pricing section for transparency -->
+    <section id="pricing">
+      <h2>Pricing</h2>
+      <p>
+        Every user receives one free optimization. After your free run,
+        unlock unlimited optimizations with a one-time purchase or affordable
+        monthly subscription. Invest in your career success for the cost of a
+        coffee.
+      </p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
