@@ -1,0 +1,160 @@
+/* Basic styling for the AI Résumé Optimizer */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+header {
+  background-color: #4f46e5;
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
+}
+
+header p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+form textarea,
+form select {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+form button {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #4f46e5;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #4338ca;
+}
+
+form button:disabled {
+  background-color: #a5b4fc;
+  cursor: default;
+}
+
+section h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  color: #4f46e5;
+}
+
+pre {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 4px;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-family: monospace;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+#paywall {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#paywall p {
+  margin-bottom: 1rem;
+}
+
+#stripeLink {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #4f46e5;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+#stripeLink:hover {
+  background-color: #4338ca;
+}
+
+/* Additional styling for informational sections */
+#features,
+#how-it-works,
+#pricing {
+  margin-top: 2rem;
+}
+
+#features ul,
+#how-it-works ol {
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+  line-height: 1.5;
+}
+
+#features ul li {
+  list-style-type: disc;
+}
+
+#how-it-works ol li {
+  list-style-type: decimal;
+}
+
+#pricing p {
+  margin-top: 0.5rem;
+}
+
+/* Styles for resume diff highlighting */
+.diff {
+  background-color: #fdfdfb;
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  font-family: monospace;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* Highlight for added/changed words */
+mark {
+  background-color: #fff4a3;
+  padding: 0 2px;
+  border-radius: 2px;
+}
